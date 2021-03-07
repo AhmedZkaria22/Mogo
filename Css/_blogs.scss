@@ -1,0 +1,53 @@
+// Blogs
+.blogs{ padding: 75px 0px;
+    .container{
+        h6{}
+        h3{
+            &::after{ @extend %AddLine; }
+        }
+        .row{  margin: 3.5rem 0rem;
+            @media(max-width: 767px){ justify-content: center; }
+            .blogs__item{  
+                @media(max-width: 767px){ margin-bottom: 2rem; }
+                figure{  width: 100%;   position: relative;
+                    img{} 
+                    p{
+                        width: 60px;    height: 70px;  position: absolute;  bottom: 20px;  left: -10px;
+                        background-color: $Theme;  padding: 8px;  color: white;   font-size: 1.4rem;  font-family: 'Montserrat';
+                        span{ display: block;   margin: auto; font-size: 0.9rem; font-family: "Roboto";}
+                    }
+                }
+                h5{margin-bottom: 0.45rem;
+                    font-size: 1.0rem;
+                    font-weight: 400;}
+                &>p{font-size: 0.8rem;
+                    line-height: 1.5;
+                    text-align: left!important;
+                    &:last-of-type{ border-top: 1px solid #e0e0e0; padding-top: 1rem;
+                        span{
+                            display: block;
+                            float: left;
+                            margin-right: 1.5rem;
+                            color: $Theme;
+                            &::before{ 
+                                font-family: "Font Awesome 5 Free";
+                                font-style: normal;
+                                font-variant: normal;
+                                text-rendering: auto;
+                                line-height: 1;
+                                display: block;
+                                margin-right: 5px;
+                                float: left;
+                                font-size: 14px;
+                                color: inherit;
+                                padding: 2px;
+                            }
+                            &:first-of-type{ &::before{ content: "\f06e"; } }
+                            &:last-of-type{ &::before{ content: "\f4ad"; } }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// Teams
+.team{  padding: 75px 0px;
+    div{
+        h3{ &::after{ @extend %AddLine; } }
+        &>p{  padding-bottom: 1.5%;}
+        .row{   justify-content: center;
+        .team__mem{ 
+            .card{ border: none;
+                .team__mem__figure{ width: 100%;    position: relative;    transition: all 0.6s linear 0s;
+                    .card-img-top{ width: 100%; }
+                    .team__overlay{
+                        @include AddOverlay(space-between, 0, 100%);                         
+                        flex-direction: row;    padding: 25% 5%;
+                        a{  
+                            i{ width: 60px;  height: 60px;  background-color: rgb(235, 196, 88);   color: $Line; 
+                                display: flex;   justify-content: center;   align-items: center;
+                                font-size: 1.875rem;    cursor: pointer;
+                                line-height: 60px;      transition: all 0.4s linear 0s;
+                                @media (max-width: 991px){
+                                    width: 45px;
+                                    height: 45px;
+                                    font-size: 1.575rem;
+                                    line-height: 45px;
+                                }
+                                &:hover{ background-color:$Line;   color: rgb(235, 196, 88);  }
+                            }
+                        }
+                    }
+                    &:hover{ .team__overlay{ opacity: 1; box-shadow: 10px 10px 0px 0px $Theme; } }
+                }
+                .card-body{
+                    .card-title{ margin-bottom: .45rem;   font-size: 1.1rem;   font-weight: 400; }
+                    .card-text{ font-style: italic; }
+                }
+            }
+        }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+*{ margin: 0;   padding: 0;  box-sizing: border-box;  
+    &:not(script, img, section, article, figure){ font-family: 'Roboto'; }
+    a,button{ text-decoration: none!important;  outline: none!important; }
+}
+
+// Colors
+$Text: #999999;
+$TextDark: #6d6d6d;
+$SecHead: #333333;
+$Theme: #95e1d3;
+$Line: #fb397d;
+// Colors
+@mixin AddFont($s,$c,$w,$f,$aln) {
+    font-size: $s;
+    color: $c;
+    font-weight: $w;
+    font-family: $f;
+    text-align: $aln;
+}
+
+%AddLine{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    margin: 35px auto;
+    background-color: $Line;
+}
+
+@mixin AddOverlay($just, $lft, $wd){
+    display: flex;   justify-content: $just;   align-items: center;    opacity: 0; flex-direction: column;
+    position: absolute;  top: 0;    left: $lft;    width: $wd;    height: 100%;
+    background:linear-gradient(rgba(219, 116, 117, 0.6) ,rgba(228, 205, 125, 0.75));
+    transition: all 0.6s linear 0s;
+}
+
+h6{ @include AddFont(24px, $SecHead, 400, "Kaushan Script", center); }
+h3{ @include AddFont(30px, $SecHead, 700, "Montserrat", center); }
+p{  @include AddFont(15px, $Text, 400, "Roboto", center); line-height: 24px; }
+
+
+.toTop {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #333333b2;
+    color: #ffffff;
+    padding: 5px 11px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/*.nicescroll-cursors{
+    height: auto;
+    background-color: rgb(160 238 243);
+}*/
+
+
+@import 'nav';
+@import 'header';
+
+@import 'about';
+@import 'counter';
+@import 'services';
+@import 'story';
+@import 'whatdo';
+@import 'testmonials';
+@import 'teams';
+@import 'brands';
+@import 'works';
+@import 'testmon';
+@import 'clients';
+@import 'blogs';
+@import 'map';
+
+@import 'footer';

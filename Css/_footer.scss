@@ -1,0 +1,69 @@
+footer{  background-color: #f8f8f8;  padding: 75px 0px;
+    .container{
+      .row{
+        section{
+            &:nth-of-type(1){
+                figure{ img{} }                    
+                p{
+                    font-size: 0.8rem;
+                    line-height: 1.5;
+                    text-align: left!important;
+                }
+                h5{ 
+                    margin-bottom: 0.45rem;
+                    font-size: 1.0rem;
+                    font-weight: 400;
+                }
+                .footer__social{
+                    border-top: 1px solid #e0e0e0;
+                    padding: 16px 0px 10px;
+                    margin-top: 20px;
+                    span{ font-size: 0.9rem;  color: gray; }
+                    a{  margin-right: 8px;
+                        i{ color: $Theme; }
+                    }
+                }                    
+                form{
+                    *{ display: block;  float: left; height: 35px; border: none;  outline: none; font-size: 0.8rem; }
+                    input{ width: 67%; padding-left: 7px; border-radius: 6px 0px 0px 6px; color: $TextDark;}
+                    button{ width: 33%; padding: 3px; text-align: center; border-radius: 0px 6px 6px 0px; background-color: $Theme; color: white;}
+                }
+                    
+            }
+            &:nth-of-type(2){
+                h5{}
+                .card{ border: none;    background: transparent;
+                    .row{                    
+                        img{ max-width: 100%;
+                            width: 90%;
+                            height: 100%;
+                         }
+                        .card-body{
+                            padding: 0; padding-top: 1.25rem;
+                            .card-text{ text-align: left;
+                                &:first-of-type{
+                                    font-size: 0.7rem;
+                                    line-height: 1.5;
+                                    margin-bottom: 0.5rem;
+                                    color: #494949;
+                                }
+                            }                        
+                        }
+                    }
+                }                
+            }
+            &:nth-of-type(3){            
+                h5{}
+                .footer__gallery{
+                    display: grid;
+                    grid-template-columns: repeat(3, 33.333%);
+                    justify-content: center;
+                    img{      max-width: 100%;
+                        width: 100%;
+                        display: block;  }
+                }                
+            }
+        }
+      }
+    }
+}

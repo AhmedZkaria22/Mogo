@@ -1,0 +1,40 @@
+// Clients
+.clients{
+    background:{
+        image: linear-gradient(rgba(#fff, 0.6), rgba(#fff, 0.75)),
+        url("../Assets/Images/clientbg.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center right;
+    }   padding: 75px 0px;
+    .container{
+        h6{}
+        h3{
+            &::after{ @extend %AddLine; }
+        }
+        .row{   padding: 0rem 3rem;  
+                @media(max-width: 767px){ padding: 0rem; }
+        .clients__client{   margin:{ bottom: 2rem; top: 2rem; }
+            .media{
+            img{ border-radius: 50%; width: 20%; }
+            .media-body{    *{ text-align: left!important; }
+                h5{    
+                margin-bottom: 0.45rem;
+                font-size: 1.0rem;
+                font-weight: 400;
+                }
+                p{  color: $TextDark;
+                &:first-of-type{ font-style: italic; font-size: 0.9rem;
+                    &::after{ @extend %AddLine;  margin: 10px auto 10px 0px; }
+                }
+                &:last-of-type{ 
+                    font-size: 0.8rem;
+                    line-height: 1.5;
+                }
+                }
+            }
+            }
+        }
+        }
+    }
+}   

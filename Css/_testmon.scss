@@ -1,0 +1,30 @@
+// Test2
+.testmons{ padding: 75px 0px; 
+    .container{
+        .row{
+            .carousel{            
+                .carousel-inner{  padding: 0 12%;
+                    .carousel-item{
+                        .media{ display: flex!important;    justify-content: space-evenly;    align-items: center;
+                            img{ width: 21%;  border-radius: 50%; }
+                            .media-body{ padding-left: 0.5rem;
+                                p{  line-height: 1.5;    font-size: 1rem;  text-align: left;  
+                                       font-weight: 300;   font-style: italic;
+                                }
+                                h5{ font-family: 'Kaushan Script';
+                                    &::before{ @extend %AddLine;  margin: 10px 20px 10px 0px;  float: left; }
+                                }
+                            }
+                        }
+                    }
+                    @media(max-width: 575px){ padding: 0% 7%; 
+                        .media{ align-items: flex-start!important;
+                            img{ margin-top: 1rem!important; }
+                        }
+                    }                    
+                }
+                //.carousel-control-prev, .carousel-control-next{ color: #b1b1b1; }
+            }
+        }
+    }
+}

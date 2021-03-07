@@ -1,0 +1,12 @@
+// Counter Section
+.counter{  padding: 50px 0px;   background-color: $Theme;    
+    .container{ 
+        .row{ justify-content: space-between;
+            @media(max-width: 575px){ justify-content: center; }
+            article{    *{ color: white; }
+                span{ font-size: 3rem; }
+                p{ font-size: 0.7rem; }
+            }
+        }
+    }
+}  

@@ -1,0 +1,46 @@
+.whatdo{ padding: 50px 0px;
+    .container{
+      h6{}
+      h3{
+        &::after{ @extend %AddLine; }
+      }
+      &>p{padding: 0% 5% 1.5%;}
+      .row{
+          @media(min-width: 575px){ justify-content: center; }
+        div{            
+            figure{
+                width: 100%;
+                img{ width: 100%; }
+            }
+            .accordion{
+                .card{
+                    .card-header{ padding: 0;
+                        button{  color: $Theme;
+                            i{
+                                display: block;
+                                float: left;                                
+                                line-height: 1;
+                                margin-right: 15px;
+                                height: 31px;                                
+                                font-size: 26px;
+                                color: inherit;
+                            }
+                        }
+                    }
+                    .collapse{height: 10rem!important;  overflow: auto;
+                        .card-body{
+                            font-size: 15px;
+                            line-height: 24px;
+                            color: $Text;
+                            font-weight: 300;
+                            font-style: italic;
+                            font-family: "Roboto";
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }          
+      }
+    }
+}

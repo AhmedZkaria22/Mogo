@@ -1,0 +1,24 @@
+// Map
+.map-close{
+    background:{
+        image: linear-gradient(rgba(#fff, 0.6), rgba(#fff, 0.75)),
+        url("../Assets/Images/mapbg.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }   padding: 110px 0px;
+    
+    button{
+        display: block;
+        margin: auto;
+        border: none;
+        background: transparent;
+        color: #fb397d8e;
+        i{  
+            font-size: 2.5rem;
+            margin: 0rem auto 0.5rem;
+            color: #fb397d8e;
+            display: block;
+        }
+    }
+}
